@@ -1,17 +1,12 @@
 import {StatusBar} from 'react-native';
 import {QueryClientProvider} from 'react-query';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import queryClient from '@wst/services/queryClient';
 import theme, {ThemeProvider} from './theme';
 import Hotels from './Hotels';
+import Stack from './Stack';
 
-export type StackParamList = {
-  Hotels: undefined;
-};
-
-const Stack = createNativeStackNavigator<StackParamList>();
 const screenOptions = {
   headerShown: false,
 };
