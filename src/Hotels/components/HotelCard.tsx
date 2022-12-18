@@ -1,22 +1,39 @@
-import {FC} from 'react';
+import {FC, useCallback} from 'react';
 import {Pressable, StyleSheet, View} from 'react-native';
 import Lottie from 'lottie-react-native';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import type {Hotel} from '@wst/services/dataProvider';
 import {H1, H2, H3} from '@wst/components/Typography';
 import {Theme, useTheme} from '@wst/theme';
 import {CurrencyToSymbol} from '@wst/utils';
 import ImageWithError from '@wst/components/ImageWithError';
+import {StackParamList} from '@wst/Stack';
 const star = require('@wst/assets/star.json');
 
 interface Props {
   hotel: Hotel;
 }
 
+type HotelsScreenNavigationProp = NativeStackNavigationProp<
+  StackParamList,
+  'Hotels'
+>;
+
 const HotelCard: FC<Props> = ({hotel}) => {
   const theme = useTheme();
   const styles = generateStyles(theme);
+
+  const {navigate} = useNavigation<HotelsScreenNavigationProp>();
+
+  const onPress = useCallback(() => {
+    navigate('HotelDetails', {
+      hotel,
+    });
+  }, [hotel, navigate]);
+
   return (
-    <Pressable style={styles.cardRoot}>
+    <Pressable style={styles.cardRoot} onPress={onPress}>
       <ImageWithError
         style={styles.image}
         resizeMode="cover"
