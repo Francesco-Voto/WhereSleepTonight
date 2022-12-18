@@ -1,10 +1,11 @@
 import {FC} from 'react';
-import {Image, Pressable, StyleSheet, View} from 'react-native';
+import {Pressable, StyleSheet, View} from 'react-native';
 import Lottie from 'lottie-react-native';
 import type {Hotel} from '@wst/services/dataProvider';
 import {H1, H2, H3} from '@wst/components/Typography';
 import {Theme, useTheme} from '@wst/theme';
 import {CurrencyToSymbol} from '@wst/utils';
+import ImageWithError from '@wst/components/ImageWithError';
 const star = require('@wst/assets/star.json');
 
 interface Props {
@@ -16,7 +17,7 @@ const HotelCard: FC<Props> = ({hotel}) => {
   const styles = generateStyles(theme);
   return (
     <Pressable style={styles.cardRoot}>
-      <Image
+      <ImageWithError
         style={styles.image}
         resizeMode="cover"
         source={{
