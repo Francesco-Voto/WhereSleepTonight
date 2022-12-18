@@ -8,7 +8,7 @@ import HotelsLoading from './components/HotelsLoading';
 import HotelsError from './components/HotelsError';
 
 const fallbackRender = (props: FallbackProps) => {
-  return <HotelsError {...props}/>;
+  return <HotelsError {...props} />;
 };
 
 const Hotels = () => {
