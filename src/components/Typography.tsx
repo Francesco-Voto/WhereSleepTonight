@@ -51,8 +51,8 @@ export const H4 = memo(
 
 const styles = StyleSheet.create({
   h1: {
-    fontSize: 72,
-    lineHeight: 80,
+    fontSize: 32,
+    lineHeight: 40,
   },
   h2: {
     fontSize: 20,
@@ -75,7 +75,7 @@ const TypographyColorVariantHandler: Record<
   base: theme => theme.color.dark,
   inverse: theme => theme.color.white,
   error: theme => theme.color.error,
-  title: theme => theme.color.secondary,
+  title: theme => theme.color.primary,
 };
 
 function stylesHandler(
