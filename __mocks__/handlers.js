@@ -2,7 +2,7 @@ import {rest} from 'msw';
 
 export const handlers = [
   rest.get(
-    'https://run.mocky.io/v3/eef3c24d-5bfd-4881-9af7-0b404ce09507?id=12321',
+    'https://run.mocky.io/v3/eef3c24d-5bfd-4881-9af7-0b404ce09507',
     (_, res, ctx) => {
       return res(
         ctx.status(200),
