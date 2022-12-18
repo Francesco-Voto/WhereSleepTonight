@@ -6378,10 +6378,10 @@ react-native-reanimated-carousel@^3.1.5:
   resolved "https://registry.yarnpkg.com/react-native-reanimated-carousel/-/react-native-reanimated-carousel-3.1.5.tgz#9737071fb06137632bd3dc7e92e75eeaf7de17a2"
   integrity sha512-s3+Qoaajpic6u4npfqLHZeIDG8G1jbBSf5fCf0gRioWCiSNw8+1kzvfU9kB5knY10XCYTksMZ0eJfi8EqEvWEw==
 
-react-native-reanimated@^2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.13.0.tgz#d64c1386626822d4dc22094b4efe028ff2c49cc9"
-  integrity sha512-yUHyYVIegWWIza4+nVyS3CSmI/Mc8kLFVHw2c6gnSHaYhYA4LeEjH/jBkoMzHk9Xd0Ra3cwtjYKAMG8OTp6JVg==
+react-native-reanimated@3.0.0-rc.3:
+  version "3.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-3.0.0-rc.3.tgz#caa9388826cbcdf30b05b85135de093f83d0a164"
+  integrity sha512-kFkbazXfhq/zb3sQyLIFegLqxzPMJAd36pbz7jtOphZ1mEXDadX0ODp6eD7/PJHnLqYGHtsqSI8WMMLLN6rdjw==
   dependencies:
     "@babel/plugin-transform-object-assign" "^7.16.7"
     "@babel/preset-typescript" "^7.16.7"
