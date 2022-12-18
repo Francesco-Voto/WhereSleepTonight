@@ -15,7 +15,9 @@ type Times = {
   to: Time;
 };
 
-type Hotel = {
+export type Currency = 'EUR';
+
+export type Hotel = {
   id: number;
   name: string;
   location: Location;
@@ -29,12 +31,12 @@ type Hotel = {
   gallery: string[];
   userRating: number;
   price: number;
-  currency: string;
+  currency: Currency;
 };
 
 type GetHotelsResponse = Hotel[];
 
-export async function fetchMovies() {
+export async function fetchHotels() {
   const {data} = await get<GetHotelsResponse>('');
 
   return data;
