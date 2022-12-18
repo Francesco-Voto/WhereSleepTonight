@@ -41,7 +41,7 @@ module.exports = {
             position: 'before',
           },
           {
-            pattern: '@wwt*/**',
+            pattern: '@wst*/**',
             group: 'external',
             position: 'after',
           },
